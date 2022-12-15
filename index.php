@@ -32,7 +32,7 @@
                     <h4>Lunghezza Password:</h4>
                     <div class="ms-btns-container">
                         <button class="btn btn-primary" type="submit">Invia</button>
-                        <button class="btn btn-secondary" type="submit">Annulla</button>
+                        <button class="btn btn-secondary" type="reset">Annulla</button>
                     </div>
                 </div>
                 <div class="col d-flex flex-column align-items-center">
