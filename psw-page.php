@@ -38,6 +38,10 @@
                 <?php } ?>
 
             </div>
+
+            <form class="text-center" action="index.php">
+                <button class="btn btn-secondary">Indietro</button>
+            </form>
         </div>
         <!-- /Results -->
 
