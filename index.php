@@ -25,9 +25,6 @@
 
     };
 
-    var_dump($psw_length);
-    var_dump(generatePassword($dictionary, $psw_length, $generated_psw));
-
 ?>
 
 <!DOCTYPE html>
@@ -56,7 +53,13 @@
         <!-- Results -->
         <div class="ms-container-sm">
             <div class="ms-psw-container">
-                <p class="psw-text">Nessun parametro valido inserito</p>
+
+                <?php if(generatePassword($dictionary, $psw_length, $generated_psw) == ""){ ?>
+                    <p class="psw-text">Nessun parametro valido inserito</p>
+                <?php } else { ?>
+                    <p class="psw-text"> <?php echo generatePassword($dictionary, $psw_length, $generated_psw) ?> </p>
+                <?php } ?>
+
             </div>
         </div>
         <!-- /Results -->
