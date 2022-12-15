@@ -6,4 +6,57 @@
     padding: 0;
 }
 
-/* RESET */
+/* /RESET */
+
+/* COMMON */
+
+body{
+    background-color: #001632;
+}
+
+.ms-container{
+    width: 75%;
+    margin: auto;
+    margin-top: 6.25rem;
+}
+
+.ms-container-sm{
+    width: 60%;
+    margin: 1.5625rem auto;
+}
+
+.ms-psw-container{
+    padding: .625rem .625rem;
+    background-color: #cff4fc;
+    border-radius: .625rem;
+}
+
+.ms-btns-container{
+    margin-top: 12.5rem;
+}
+
+/* /COMMON */
+
+.app-title{
+    font-size: 3.125rem;
+    color: #7f8b99;
+}
+
+.app-desc{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.psw-text{
+    margin: 0;
+    font-size: 1.375rem;
+    color: #3a6680;
+}
+
+
+.row{
+    padding: 1.5625rem .625rem;
+    background-color: white;
+    border-radius: .625rem;
+}
+
