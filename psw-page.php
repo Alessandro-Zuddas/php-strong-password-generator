@@ -17,34 +17,29 @@
         <!-- Mine style -->
         <link rel="stylesheet" href="style.css">
         <!-- /Mine style -->
-        <title>Password Generator</title>
+        <title>La tua password</title>
     </head>
     <body>
         
         <!-- App Titles -->
         <div class="ms-container text-center">
-            <h1 class="app-title">Strong Password Generator</h1>
-            <h2 class="app-desc">Genera una password sicura</h2>
+            <h1 class="app-title">La tua password sicura:</h1>
         </div>
         <!-- /App Titles -->
 
-        <!-- Form -->
+        <!-- Results -->
         <div class="ms-container-sm">
-            <form class="row" action="psw-page.php" method="GET">
-                <div class="col d-flex flex-column justify-content-center">
-                    <h4>Lunghezza Password:</h4>
-                    <div class="ms-btns-container">
-                        <button class="btn btn-primary" type="submit">Invia</button>
-                        <button class="btn btn-secondary" type="submit">Annulla</button>
-                    </div>
-                </div>
-                <div class="col d-flex flex-column align-items-center">
-                    <input class="ms-input-psw" type="number" min="4"
-                    name="psw-length">
-                </div>
-            </form>
+            <div class="ms-psw-container text-center my-5 py-5">
+
+                <?php if(generatePassword($dictionary, $psw_length, $generated_psw) == ""){ ?>
+                    <p class="psw-text">Nessun parametro valido inserito</p>
+                <?php } else { ?>
+                    <strong class="psw-text"> <?php echo $_SESSION["safePsw"] ?> </strong>
+                <?php } ?>
+
+            </div>
         </div>
-        <!-- /Form -->
+        <!-- /Results -->
 
         <!-- Bootstrap CDN -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
