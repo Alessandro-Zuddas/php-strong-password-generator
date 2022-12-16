@@ -1,4 +1,5 @@
 <?php
+
     session_start();
 
     include __DIR__ . "/functions.php";
@@ -31,7 +32,7 @@
         <div class="ms-container-sm">
             <div class="ms-psw-container text-center my-5 py-5">
 
-                <?php if(generatePassword($dictionary, $psw_length, $generated_psw) == ""){ ?>
+                <?php if(generatePassword($letters, $capital_letters, $symbols, $numbers, $psw_length, $generated_psw) == ""){ ?>
                     <p class="psw-text">Nessun parametro valido inserito</p>
                 <?php } else { ?>
                     <strong class="psw-text"> <?php echo $_SESSION["safePsw"] ?> </strong>
