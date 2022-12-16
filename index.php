@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="col d-flex flex-column align-items-center">
-                    <input class="ms-input-psw" type="number" min="4"
+                    <input class="ms-input-psw" type="number" min="8"
                     name="psw-length">
                 </div>
             </form>
